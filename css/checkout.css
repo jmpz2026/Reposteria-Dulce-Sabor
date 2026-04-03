@@ -4,6 +4,7 @@ body{
 
 .bill{
     background-color: #f3f3f3;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
     width: 400px;
     padding: 20px;
     border: 1px solid pink;
@@ -49,6 +50,7 @@ body{
 
 .detailSection{
     background-color: #f3f3f3;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
     padding: 20px;
     border: 1px solid pink;
     border-radius: 8px;
