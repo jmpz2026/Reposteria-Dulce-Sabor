@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: center;
     background-color: #fcd8ef;
+
 }
 
 .sidebar {
@@ -22,4 +23,10 @@
 .contactUsSection img{
     width: 24px;
     height: 24px;
+}
+
+.homeSection:hover,
+.cartSection:hover,
+.contactUsSection:hover{
+    cursor: pointer;
 }
