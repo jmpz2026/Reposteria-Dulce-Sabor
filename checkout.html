@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Checkout - Dulce Sabor</title>
-    <link rel="stylesheet" href="css/global/sidebar.css">
-    <link rel="stylesheet" href="css/global/mainhome.css">
-    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="./css/main-page.css">
+    <link rel="stylesheet" href="./css/global/sidebar.css">
+    <link rel="stylesheet" href="./css/global/mainhome.css">
+    <link rel="stylesheet" href="./css/checkout.css">
 
     <script src="./js/sidebar.js" defer></script>
     <script src="./js/checkout.js" defer></script>
@@ -13,15 +14,15 @@
 </head>
 <body>
 <div class="sidebar">
-    <div class="homeSection" onclick="location.href='./main-page.html'" style="cursor: pointer;">
+    <div class="homeSection" onclick="location.href='./main-page.html'">
         <img src="./assets/images/sidebar/homeIcon.svg" alt="TIENDA">
         <p>TIENDA</p>
     </div>
-    <div class="cartSection" onclick="location.href='./checkout.html'" style="cursor: pointer;">
+    <div class="cartSection" onclick="location.href='./checkout.html'">
         <img src="./assets/images/sidebar/cartIcon.svg" alt="CARRITO">
         <p>CARRITO</p>
     </div>
-    <div class="contactUsSection" onclick="location.href='./info-us.html'" style="cursor: pointer;">
+    <div class="contactUsSection" onclick="location.href='./info-us.html'">
         <img src="./assets/images/sidebar/contactUsIcon.svg" alt="CONTACTO">
         <p>CONTACTANOS</p>
     </div>
@@ -80,6 +81,39 @@
 
             <input type="submit" value="Confirmar pago" class="btnSubmit">
         </form>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-box">
+
+            <div class="popup-header">
+                <h2>Resumen del pedido</h2>
+            </div>
+
+            <div class="popup-body">
+                <p class="popup-name"></p>
+
+                <div class="price-row">
+                    <span>Precio:</span>
+                    <span class="popup-price-base"></span>
+                </div>
+
+                <div class="price-row">
+                    <span>Domicilio:</span>
+                    <span class="popup-price-delivery"></span>
+                </div>
+
+                <div class="price-row total">
+                    <span>Total:</span>
+                    <span class="popup-price-total"></span>
+                </div>
+            </div>
+
+            <div class="popup-footer">
+                <button class="readyBtn">Entendido</button>
+            </div>
+
+        </div>
     </div>
 </div>
 
