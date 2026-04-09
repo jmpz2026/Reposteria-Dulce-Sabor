@@ -1,0 +1,96 @@
+/* Estilos Globales */
+body {
+    background-color: #fff3f3;
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+}
+
+/* Sidebar (Barra Lateral) */
+.sidebar {
+    width: 220px;
+    background-color: #f8e1ee;
+    height: 100vh;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    position: fixed;
+    box-sizing: border-box;
+}
+
+.sidebar div {
+    margin-bottom: 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.sidebar img { width: 28px; height: 28px; }
+.sidebar p { margin: 0; font-weight: bold; color: #4a1d33; font-size: 14px; }
+
+/* Contenedor Principal */
+.mainHome {
+    flex: 1;
+    margin-left: 220px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Cuadrícula de productos (3 columnas) */
+.cardsHome {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    gap: 40px;
+    justify-content: center;
+}
+
+/* Estilo de la Tarjeta y Foto "Ventana" */
+.card {
+    width: 200px;
+    text-align: center;
+}
+
+.card img {
+    width: 200px !important;
+    height: 200px !important;
+    object-fit: cover !important;
+    border-radius: 60px !important; /* Bordes muy curvos */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Cuadro rosado de precio */
+.card p {
+    background-color: #fcd8ef;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 13px;
+    color: #000;
+}
+
+.pagination {
+    align-self: flex-end; /* Alinea los botones a la derecha */
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+    padding-right: 50px; /* Ajusta según necesites */
+}
+
+.pagination a, .pagination span {
+    background-color: #7a4a63; /* Color lila de los botones */
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+}
+
+.pagination span {
+    background-color: #4a1d33; /* Color más oscuro para el número actual (4) */
+}

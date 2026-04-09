@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+    <!--PONER ESTOS ESTILOS CSS DE SIDEBAR, BANNER (OPCIONAL) Y MAINHOME-->
+    <link rel="stylesheet" href="css/global/sidebar.css">
+    <link rel="stylesheet" href="css/global/mainhome.css">
+
+    <link rel="stylesheet" href="css/checkout.css">
+
+    <!--SI VAS A USAR SIDEBAR SIEMPRE PON ESTO-->
+    <script src="./js/sidebar.js" defer></script>
+
+    <script src="./js/checkout.js" defer></script>
+    <script src="./js/bill.js" defer></script>
+</head>
+<body>
+    <!--PONER ESTA SECCION HTML DE SIDEBAR -->
+    <div class="sidebar">
+        <div class="homeSection">
+            <img src="./assets/images/sidebar/homeIcon.svg" alt="NO SE ENCONTRO LA IMAGEN">
+            <p>TIENDA</p>
+        </div>
+        <div class="cartSection">
+            <img src="./assets/images/sidebar/cartIcon.svg" alt="NO SE ENCONTRO LA IMAGEN">
+            <p>CARRITO</p>
+        </div>
+        <div class="contactUsSection">
+            <img src="./assets/images/sidebar/contactUsIcon.svg" alt="NO SE ENCONTRO LA IMAGEN">
+            <p>CONTACTANOS</p>
+        </div>
+    </div>
+
+    <div class="mainHome">
+        <div class="bill">
+            <div class="summarySection">
+                <p>Resumen del pedido</p>
+                <hr>
+                <div class="itemSection">
+                    <img src="./assets/images/ejemplo.png" alt="NO SE ENCONTRO LA IMAGEN">
+                    <div>
+                        <p>Torta de chocolate</p>
+                        <p>$85.000</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="itemPrice">
+                    <div class="itemInline">
+                        <p>Domicilio:</p>
+                        <p>2000$</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="itemPriceTotal">
+                    <div class="itemInline">
+                        <p>Total:</p>
+                        <p>3000$</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="detailSection">
+            <p>Datos de pago</p>
+            <form class="detailForm">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Ingrese el nombre de la persona" required>
+
+                <label for="address">Direccion:</label>
+                <input type="text" id="address" name="address" placeholder="Ingrese la direccion" required>
+
+                <label for="phone">Numero de celular:</label>
+                <input type="text" id="phone" name="phone" placeholder="Ingrese el numero de celular" required>
+
+                <label for="email">Correo electronico:</label>
+                <input type="text" id="email" name="email" placeholder="Ingrese el correo electronico" required>
+
+                <label for="paymentOption">Elige una opción:</label>
+                <select id="paymentOption">
+                    <option value="1">TARJETA</option>
+                    <option value="2">TRANSFERENCIA</option>
+                    <option value="3">EFECTIVO</option>
+                </select>
+
+                <input type="submit" value="Confirmar pago" class="btnSubmit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

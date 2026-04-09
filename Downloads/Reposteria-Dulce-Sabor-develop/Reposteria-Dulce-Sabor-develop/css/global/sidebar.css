@@ -1,0 +1,32 @@
+.homeSection,
+.cartSection,
+.contactUsSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fcd8ef;
+
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100dvh;
+    background-color: #fce8ef;
+    padding-top: 20px;
+    gap: 20px;
+}
+
+.homeSection img,
+.cartSection img,
+.contactUsSection img{
+    width: 24px;
+    height: 24px;
+}
+
+.homeSection:hover,
+.cartSection:hover,
+.contactUsSection:hover{
+    cursor: pointer;
+}
