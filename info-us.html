@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--PONER ESTOS ESTILOS CSS DE SIDEBAR, BANNER (OPCIONAL) Y MAINHOME-->
+    <link rel="stylesheet" href="./css/main-page.css">
+    <link rel="stylesheet" href="./css/global/sidebar.css">
+    <link rel="stylesheet" href="./css/global/mainhome.css">
+    <link rel="stylesheet" href="./css/global/popup.css">
+
+    <link rel="stylesheet" href="./css/info-us.css">
+
+    <!--SI VAS A USAR SIDEBAR SIEMPRE PON ESTO-->
+    <script src="./js/sidebar.js" defer></script>
+    <script src="./js/info-us.js" defer></script>
+</head>
+<body>
+    <!--PONER ESTA SECCION HTML DE SIDEBAR -->
+    <div class="sidebar">
+        <div class="homeSection">
+            <img src="./assets/images/sidebar/homeIcon.svg" alt="NO SE ENCONTRO LA IMAGEN">
+            <p>TIENDA</p>
+        </div>
+        <div class="cartSection">
+            <img src="./assets/images/sidebar/cartIcon.svg" alt="NO SE ENCONTRO LA IMAGEN">
+            <p>CARRITO</p>
+        </div>
+        <div class="contactUsSection">
+            <img src="./assets/images/sidebar/contactUsIcon.svg" alt="NO SE ENCONTRO LA IMAGEN">
+            <p>CONTACTANOS</p>
+        </div>
+    </div>
+
+    <div class="mainHome">
+        <h1> AQUI ESTAMOS:</h1>
+        <div class="iconSection">
+            <div class="iconCard">
+                <img src="./assets/images/email.webp" alt="NO SE ENCONTRO LA IMAGEN">
+                <p>dulcesabor@gmail.com</p>
+            </div>
+            <div class="iconCard">
+                <img src="./assets/images/phone.webp" alt="NO SE ENCONTRO LA IMAGEN" class="btnPhone">
+                <p>676767676767</p>
+            </div>
+            <div class="iconCard">
+                <img src="./assets/images/location.webp" alt="NO SE ENCONTRO LA IMAGEN">
+                <p>3 Sedes</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-box">
+
+            <div class="popup-header">
+                <h2>Llamando - Atencion al cliente</h2>
+            </div>
+
+            <div class="popup-body">
+                <label for="message" class="popup-input-message">Ingrese su mensaje:</label>
+                <input class="popup-input-message" type="text" id="message" name="message" placeholder="Ingrese su mensaje" required>
+
+                <div class = "answer-pop">
+                    <p class = "answer-pop-message">ASDADAS</p>
+                </div>
+            </div>
+
+            <div class="popup-footer ia">
+                <button class="readyBtn">Listo</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

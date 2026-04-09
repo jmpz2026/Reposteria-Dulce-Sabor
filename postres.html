@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Postres - Dulce Sabor</title>
+    <link rel="stylesheet" href="./css/main-page.css">
+    <link rel="stylesheet" href="./css/global/sidebar.css">
+</head>
+<body>
+
+<div class="sidebar">
+    <div onclick="location.href='./main-page.html'">
+        <img src="./assets/images/sidebar/homeIcon.svg" alt="Tienda">
+        <p>TIENDA</p>
+    </div>
+    <div onclick="location.href='./checkout.html'">
+        <img src="./assets/images/sidebar/cartIcon.svg" alt="Carrito">
+        <p>CARRITO</p>
+    </div>
+    <div onclick="location.href='./info-us.html'">
+        <img src="./assets/images/sidebar/contactUsIcon.svg" alt="Contacto">
+        <p>CONTACTANOS</p>
+    </div>
+</div>
+
+<div class="mainHome">
+    <div class="cardsHome">
+        <div class="card">
+            <img src="./assets/images/home/cheescakefr.webpg" alt="Frutos Rojos" style="cursor: pointer;"
+                 onclick="seleccionarProducto('Cheesecake frutos rojos', 8000, './assets/images/home/cheescakefr.webpg')">
+            <p>Cheesecake frutos rojos <br> $8.000</p>
+        </div>
+
+        <div class="card">
+            <img src="./assets/images/home/cheesecakefa.webpg" alt="Amarillos" style="cursor: pointer;"
+                 onclick="seleccionarProducto('Cheesecake frutos amarillos', 8000, './assets/images/home/cheesecakefa.webpg')">
+            <p>Cheesecake frutos amarillos <br> $8.000</p>
+        </div>
+
+        <div class="card">
+            <img src="./assets/images/home/cheesecakeoreo.webpg" alt="Oreo" style="cursor: pointer;"
+                 onclick="seleccionarProducto('Cheesecake Oreo', 8000, './assets/images/home/cheesecakeoreo.webpg')">
+            <p>Cheesecake Oreo <br> $8.000</p>
+        </div>
+
+        <div class="card">
+            <img src="./assets/images/home/postredemilo.webpg" alt="Milo" style="cursor: pointer;"
+                 onclick="seleccionarProducto('Postre de Milo', 7000, './assets/images/home/postredemilo.webpg')">
+            <p>Postre de Milo <br> $7.000</p>
+        </div>
+
+        <div class="card">
+            <img src="./assets/images/home/galletasx4.webpg" alt="Galletas" style="cursor: pointer;"
+                 onclick="seleccionarProducto('Paquete galletas x4', 20000, './assets/images/home/galletasx4.webpg')">
+            <p>Paquete galletas x4 <br> $20.000</p>
+        </div>
+
+        <div class="card">
+            <img src="./assets/images/home/donas.webp" alt="Donas" style="cursor: pointer;"
+                 onclick="seleccionarProducto('Paquete donas x4', 25000, './assets/images/home/donas.webp')">
+            <p>Paquete donas x4 <br> $25.000</p>
+        </div>
+    </div>
+
+    <div class="pagination">
+        <a href="./tortas.html">&lt;</a>
+        <span>2</span>
+        <a href="./bebidas.html">&gt;</a>
+    </div>
+</div>
+
+<script src="./js/tienda.js"></script>
+
+</body>
+</html>

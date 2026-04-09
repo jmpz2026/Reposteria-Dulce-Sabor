@@ -1,0 +1,35 @@
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background-color: #ead9e0; /* Color morado suave */
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #d8c3cc;
+    z-index: 100;
+}
+
+.sidebar div {
+    display: flex;
+    align-items: center;
+    padding: 18px 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #d8c3cc;
+    color: #4a1d33;
+}
+
+.sidebar img {
+    width: 20px;
+    margin-right: 12px;
+}
+
+.sidebar p {
+    margin: 0;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.sidebar div:hover {
+    background: #fad9e0;
+}
