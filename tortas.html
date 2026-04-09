@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Tortas - Dulce Sabor</title>
     <link rel="stylesheet" href="./css/main-page.css">
+    <link rel="stylesheet" href="./css/global/sidebar.css">
 </head>
 <body>
 
@@ -25,37 +26,44 @@
 <div class="mainHome">
     <div class="cardsHome">
         <div class="card">
-            <img src="./assets/images/home/nuecesyavellanas.jpg" alt="Pastel de nueces y avellanas">
+            <img src="./assets/images/home/nuecesyavellanas.jpg" alt="Pastel de nueces y avellanas" style="cursor: pointer;"
+                 onclick="seleccionarProducto('Pastel de nueces y avellanas', 50000, './assets/images/home/nuecesyavellanas.jpg')">
             <p>Pastel de nueces y avellanas <br> $50.000</p>
         </div>
 
         <div class="card">
-            <img src="./assets/images/home/pastelzanahoria.jpg" alt="Pastel de zanahoria">
+            <img src="./assets/images/home/pastelzanahoria.jpg" alt="Pastel de zanahoria" style="cursor: pointer;"
+                 onclick="seleccionarProducto('Pastel de zanahoria', 40000, './assets/images/home/pastelzanahoria.jpg')">
             <p>Pastel de zanahoria <br> $40.000</p>
         </div>
 
         <div class="card">
-            <img src="./assets/images/home/pastellimon.jpg" alt="Pastel de limón">
+            <img src="./assets/images/home/pastellimon.jpg" alt="Pastel de limón" style="cursor: pointer;"
+                 onclick="seleccionarProducto('Pastel de limón', 40000, './assets/images/home/pastellimon.jpg')">
             <p>Pastel de limón <br> $40.000</p>
         </div>
 
         <div class="card">
-            <img src="./assets/images/home/pastelchocolate.jpg" alt="Pastel de chocolate">
+            <img src="./assets/images/home/pastelchocolate.jpg" alt="Pastel de chocolate" style="cursor: pointer;"
+                 onclick="seleccionarProducto('Pastel de chocolate y vainilla', 50000, './assets/images/home/pastelchocolate.jpg')">
             <p>Pastel de chocolate y vainilla <br> $50.000</p>
         </div>
 
         <div class="card">
-            <img src="./assets/images/home/pastelnaranja.jpg" alt="Pastel de naranja">
+            <img src="./assets/images/home/pastelnaranja.jpg" alt="Pastel de naranja" style="cursor: pointer;"
+                 onclick="seleccionarProducto('Pastel de naranja y miel', 40000, './assets/images/home/pastelnaranja.jpg')">
             <p>Pastel de naranja y miel <br> $40.000</p>
         </div>
     </div>
 
     <div class="pagination">
-        <a href="./main-page.html">|<</a>
-        <span>3</span>
+        <a>|</a>
+        <span>1</span>
         <a href="./postres.html">&gt;</a>
     </div>
 </div>
+
+<script src="./js/tienda.js"></script>
 
 </body>
 </html>

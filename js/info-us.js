@@ -13,8 +13,11 @@ Reglas:
 
 Pregunta del usuario:
 `;
+
+// Esta es la "url" de la ia
 const iaUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=`;
 
+//
 async function interactBtnPhone(){
     let apiKey = prompt('INGRESA TU API KEY');
     if (!apiKey || apiKey.length < 1 || apiKey === '') {
@@ -49,6 +52,7 @@ async function interactBtnPhone(){
             }
         );
 
+        // Esto convierte a texto .text() y luego hace un JSON.parse() por si el instru pregunta
         let data = await response.json();
 
         console.log(data)

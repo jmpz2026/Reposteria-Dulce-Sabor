@@ -14,3 +14,20 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+.card img {
+    transition: 0.2s;
+}
+
+.card img:hover{
+    transform: scale(1.05);
+}
+
+.card a{
+    text-decoration: none;
+}
+
+.card a p{
+    font-size: 20px;
+    font-weight: bold;
+}

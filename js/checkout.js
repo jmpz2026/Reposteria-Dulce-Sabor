@@ -1,7 +1,30 @@
 const btnSubmit = document.querySelector('.btnSubmit');
+const readyBtn = document.querySelector('.readyBtn');
 
 function registerTransaction(event){
     event.preventDefault();
+
+    const productData = localStorage.getItem('productoParaPagar');
+    if(!productData){
+        alert("Producto invalido");
+        return;
+    }
+
+    const product = JSON.parse(productData);
+    if(!product.nombre){
+        alert("Producto no contiene nombre");
+        return;
+    }
+    if(!product.precio || Number.isNaN(Number(product.precio))){
+        alert("Producto no contiene precio o es invalido");
+        return;
+    }
+
+    let productName = product.nombre;
+    let priceBase = Number(product.precio);
+    let priceDelivery = 2000;
+    let priceTotal = priceBase + priceDelivery;
+
     let name = document.querySelector('#name').value;
     if (!name || name === '' || name === null) {
         alert('Por favor ingresa un nombre valido');
@@ -37,7 +60,11 @@ function registerTransaction(event){
         address,
         phone,
         email,
-        paymentOption
+        paymentOption,
+        productName,
+        priceBase,
+        priceDelivery,
+        priceTotal
     );
 
     let bills = JSON.parse(localStorage.getItem('bills')) || [];
@@ -46,6 +73,24 @@ function registerTransaction(event){
 
     console.log(bill);
     console.log(bills);
+    showWindowBill(bill)
+}
+
+function showWindowBill(bill){
+    let popUp = document.querySelector('.popup-box');
+    popUp.querySelector('.popup-name').textContent = bill.productName;
+    popUp.querySelector('.popup-price-base').textContent = bill.priceBase + '$';
+    popUp.querySelector('.popup-price-delivery').textContent = bill.priceDelivery + '$';
+    popUp.querySelector('.popup-price-total').textContent = bill.priceTotal + '$';
+
+    document.querySelector('.popup').style.display = 'flex';
+    document.querySelector('.popup').classList.add('active');
+}
+
+function hideWindowBill(){
+    document.querySelector('.popup').classList.remove('active');
 }
 
 btnSubmit.addEventListener('click', registerTransaction);
+
+readyBtn.addEventListener('click', hideWindowBill);

@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Bebidas - Dulce Sabor</title>
-    <link rel="stylesheet" href="./css/main-page.css?v=1.1">
+    <link rel="stylesheet" href="./css/main-page.css">
+    <link rel="stylesheet" href="./css/global/sidebar.css">
 </head>
 <body>
 <div class="sidebar">
@@ -21,36 +22,38 @@
 <div class="mainHome">
     <div class="cardsHome">
         <div class="card">
-            <img src="./assets/images/home/malteadas.jpg" alt="Malteadas">
+            <img src="./assets/images/home/malteadas.jpg" alt="Malteadas" style="cursor: pointer;" onclick="seleccionarProducto('Malteadas', 15000, './assets/images/home/malteadas.jpg')">
             <p>Malteadas <br> $15.000</p>
         </div>
         <div class="card">
-            <img src="./assets/images/home/frappe.jpg" alt="Frappes">
+            <img src="./assets/images/home/frappe.jpg" alt="Frappes" style="cursor: pointer;" onclick="seleccionarProducto('Frappes', 12000, './assets/images/home/frappe.jpg')">
             <p>Frappes <br> $12.000</p>
         </div>
         <div class="card">
-            <img src="./assets/images/home/milofrio.jpg" alt="Milo frío">
+            <img src="./assets/images/home/milofrio.jpg" alt="Milo frío" style="cursor: pointer;" onclick="seleccionarProducto('Milo frío', 10000, './assets/images/home/milofrio.jpg')">
             <p>Milo frío <br> $10.000</p>
         </div>
         <div class="card">
-            <img src="./assets/images/home/capuccino.jpg" alt="Capuchino">
+            <img src="./assets/images/home/capuccino.jpg" alt="Capuchino" style="cursor: pointer;" onclick="seleccionarProducto('Capuchino', 7000, './assets/images/home/capuccino.jpg')">
             <p>Capuchino <br> $7.000</p>
         </div>
         <div class="card">
-            <img src="./assets/images/home/agua.jpg" alt="Botella agua">
+            <img src="./assets/images/home/agua.jpg" alt="Botella agua" style="cursor: pointer;" onclick="seleccionarProducto('Botella agua', 3000, './assets/images/home/agua.jpg')">
             <p>Botella agua <br> $3.000</p>
         </div>
         <div class="card">
-            <img src="./assets/images/home/GASEOSA.jpg" alt="Gaseosa">
+            <img src="./assets/images/home/GASEOSA.jpg" alt="Gaseosa" style="cursor: pointer;" onclick="seleccionarProducto('Gaseosa', 3000, './assets/images/home/GASEOSA.jpg')">
             <p>Gaseosa <br> $3.000</p>
         </div>
     </div>
 
     <div class="pagination">
-        <a href="./postres.html">|<</a>
-        <span style="background: #4a1d33;">5</span>
-        <a href="./info-us.html">&gt;</a>
+        <a href="./postres.html"><</a>
+        <span style="background: #4a1d33;">3</span>
+        <a>|</a>
     </div>
 </div>
+
+<script src="./js/tienda.js"></script>
 </body>
 </html>

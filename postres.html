@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Postres - Dulce Sabor</title>
     <link rel="stylesheet" href="./css/main-page.css">
+    <link rel="stylesheet" href="./css/global/sidebar.css">
 </head>
 <body>
 
@@ -25,36 +26,50 @@
 <div class="mainHome">
     <div class="cardsHome">
         <div class="card">
-            <img src="./assets/images/home/cheescakefr.jpeg" alt="Frutos Rojos">
+            <img src="./assets/images/home/cheescakefr.jpeg" alt="Frutos Rojos" style="cursor: pointer;"
+                 onclick="seleccionarProducto('Cheesecake frutos rojos', 8000, './assets/images/home/cheescakefr.jpeg')">
             <p>Cheesecake frutos rojos <br> $8.000</p>
         </div>
+
         <div class="card">
-            <img src="./assets/images/home/cheesecakefa.jpeg" alt="Amarillos">
+            <img src="./assets/images/home/cheesecakefa.jpeg" alt="Amarillos" style="cursor: pointer;"
+                 onclick="seleccionarProducto('Cheesecake frutos amarillos', 8000, './assets/images/home/cheesecakefa.jpeg')">
             <p>Cheesecake frutos amarillos <br> $8.000</p>
         </div>
+
         <div class="card">
-            <img src="./assets/images/home/cheesecakeoreo.jpeg" alt="Oreo">
+            <img src="./assets/images/home/cheesecakeoreo.jpeg" alt="Oreo" style="cursor: pointer;"
+                 onclick="seleccionarProducto('Cheesecake Oreo', 8000, './assets/images/home/cheesecakeoreo.jpeg')">
             <p>Cheesecake Oreo <br> $8.000</p>
         </div>
+
         <div class="card">
-            <img src="./assets/images/home/postredemilo.jpeg" alt="Milo">
+            <img src="./assets/images/home/postredemilo.jpeg" alt="Milo" style="cursor: pointer;"
+                 onclick="seleccionarProducto('Postre de Milo', 7000, './assets/images/home/postredemilo.jpeg')">
             <p>Postre de Milo <br> $7.000</p>
         </div>
+
         <div class="card">
-            <img src="./assets/images/home/galletasx4.jpeg" alt="Galletas">
+            <img src="./assets/images/home/galletasx4.jpeg" alt="Galletas" style="cursor: pointer;"
+                 onclick="seleccionarProducto('Paquete galletas x4', 20000, './assets/images/home/galletasx4.jpeg')">
             <p>Paquete galletas x4 <br> $20.000</p>
         </div>
+
         <div class="card">
-            <img src="./assets/images/home/donas.jpg" alt="Donas">
+            <img src="./assets/images/home/donas.jpg" alt="Donas" style="cursor: pointer;"
+                 onclick="seleccionarProducto('Paquete donas x4', 25000, './assets/images/home/donas.jpg')">
             <p>Paquete donas x4 <br> $25.000</p>
         </div>
     </div>
 
     <div class="pagination">
-        <span>4</span>
+        <a href="./tortas.html">&lt;</a>
+        <span>2</span>
         <a href="./bebidas.html">&gt;</a>
     </div>
 </div>
+
+<script src="./js/tienda.js"></script>
 
 </body>
 </html>
