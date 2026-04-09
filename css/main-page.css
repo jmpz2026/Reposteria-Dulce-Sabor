@@ -82,3 +82,12 @@ body {
     font-size: 24px;
     font-weight: bold;
 }
+
+
+.card img {
+    transition: 0.2s;
+}
+
+.card img:hover{
+    transform: scale(1.05);
+}
