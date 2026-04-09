@@ -15,7 +15,7 @@ Pregunta del usuario:
 `;
 
 // Esta es la "url" de la ia
-const iaUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=`;
+const iaUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=`;
 
 //
 async function interactBtnPhone(){
